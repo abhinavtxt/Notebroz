@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #0b0b12;
+  color: #f5f5f7;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #22222d;
+  background: #0b0b12;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.logo span, .hero span {
+  color: #a78bfa;
+}
+
+.nav-btn, .primary-btn, .card-btn {
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.nav-btn {
+  padding: 9px 16px;
+  border: 1px solid #343442;
+}
+
+.hero {
+  text-align: center;
+  padding: 95px 20px 85px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.tag {
+  color: #a78bfa;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.05;
+  margin-bottom: 22px;
+}
+
+.subtitle {
+  max-width: 650px;
+  margin: auto;
+  color: #a5a5b1;
+  font-size: 18px;
+}
+
+.primary-btn {
+  margin-top: 28px;
+  padding: 13px 22px;
+  background: #a78bfa;
+  color: #111;
+}
+
+.section {
+  padding: 70px 7%;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section h2, .free-section h2 {
+  font-size: 38px;
+}
+
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.subject-card {
+  background: #14141d;
+  border: 1px solid #272733;
+  border-radius: 18px;
+  padding: 28px;
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-4px);
+  border-color: #5a526f;
+}
+
+.icon {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.subject-card h3 {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.subject-card p, .free-section p {
+  color: #9999a7;
+}
+
+.card-btn {
+  margin-top: 20px;
+  color: #c4b5fd;
+}
+
+.free-section {
+  text-align: center;
+  margin: 30px 7% 80px;
+  padding: 55px 20px;
+  border: 1px solid #272733;
+  border-radius: 22px;
+  background: #11111a;
+}
+
+footer {
+  text-align: center;
+  color: #777785;
+  border-top: 1px solid #22222d;
+  padding: 25px;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+}
